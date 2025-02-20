@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import ReactDOM from 'react-dom'
+import ReactDOM, { createPortal } from 'react-dom'
 import CreateArea from './CreateArea';
 import Review from './Review';
 import { createRoot } from 'react-dom/client'
@@ -19,13 +19,14 @@ export default function App(params) {
         <div>
             <CreateArea onAdd={addNote}/>
 
-            {notes.map((noteItem) => {
+
+            {createPortal((notes.map((noteItem) => {
                 return <Review 
                 key={noteItem.id}
                 title={noteItem.title}
                 review={noteItem.review}
                 />
-            })}
+            })), document.getElementsByClassName('flexReviewsContainer')[1])}
 
         </div>
     );

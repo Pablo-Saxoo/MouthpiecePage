@@ -232,6 +232,13 @@ a{
     gap: 50px;
 }
 
+.flexAd{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .trust{
     font-size: 36px;
     font-weight: bold;
@@ -239,7 +246,14 @@ a{
 
 .customers{
     font-size: 30px;
-    margin-top: -70px;
+    /* margin-top: -70px; */
+}
+
+.flexComm{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 100px;
 }
 
 .flexReviewsContainer{
@@ -251,11 +265,20 @@ a{
 .quote{
     background-color: #BA7979;
     width: 485px;
-    height: 164px;
+    height: 200px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    padding-left: 10px;
+}
+
+.QCenter{
+    text-align: center;
+}
+
+.quote p, h1{
+    color: black;
 }
 
 .quoteBigP{
@@ -263,14 +286,47 @@ a{
     margin-top: -5px;
 }
 
+.quoteBigPP{
+    font-size: 27px;
+    margin-top: -4px;
+}
+
 .quoteH{
     margin-top: -10px;
+    font-size: 18px;
+}
+
+.quoteHH{
     font-size: 18px;
 }
 
 .quoteSmallP{
     margin-top: -10px;
     font-size: 18px;
+}
+
+.quoteSmallPP{
+    font-size: 18px;
+}
+
+.titleClasse{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: -25px;
+    gap: 10px;
+}
+
+.titleName{
+    /* font-size: 1.05em; */
+}
+
+.descriptionClasse{
+    display: flex;
+    /* align-items: center; */
+    justify-content: flex-start;
+    margin-top: -20px;
+    gap: 10px;
 }
 
 form{

@@ -31,6 +31,7 @@ export default function CreateArea(props) {
     return(
         <div>
             <form action="">
+                <p className="quoteBigP QCenter">"Write your review here"</p>
                 <input type="text" onChange={handleChange} value={note.title} name="title" placeholder="Title"/>
                 <textarea  name="review"  onChange={handleChange} value={note.review} placeholder="Take a review..." rows={2}></textarea>
                 <button onClick={submitReview}>Add</button>
