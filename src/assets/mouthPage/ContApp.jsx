@@ -8,7 +8,7 @@ function createProduct(params) {
     return (<Product 
     key = {params.id}
     name = {params.name}
-    img_src = {params.img_scr}
+    img_src = {params.img_src}
     price = {params.price}
     available = {params.available}
     />)
