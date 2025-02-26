@@ -8,6 +8,8 @@ const data = [
         instr_type: "ALT",
         style: "JAZZ",
         tip_open: 1.6,
+        productPage: "",
+        description: "",
     },
     {
         id: 2,
@@ -18,6 +20,8 @@ const data = [
         instr_type: "TENOR",
         style: "JAZZ",
         tip_open: 2.0,
+        productPage: "",
+        description: "",
     },
     {
         id: 3,
@@ -28,6 +32,8 @@ const data = [
         instr_type: "ALT",
         style: "JAZZ",
         tip_open: 1.4,
+        productPage: "",
+        description: "",
     },
     {
         id: 4,
@@ -38,6 +44,8 @@ const data = [
         instr_type: "ALT",
         style: "POP",
         tip_open: 1.6,
+        productPage: "",
+        description: "",
     },
     {
         id: 5,
@@ -48,6 +56,8 @@ const data = [
         instr_type: "ALT",
         style: "POP",
         tip_open: 1.6,
+        productPage: "",
+        description: "",
     },
     {
         id: 6,
@@ -58,6 +68,8 @@ const data = [
         instr_type: "SOPR",
         style: "JAZZ",
         tip_open: 1.6,
+        productPage: "",
+        description: "",
     }
 ];
 

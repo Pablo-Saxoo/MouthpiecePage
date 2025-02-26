@@ -10,17 +10,16 @@ export default function Product(props) {
     return(
         <div className='mouthProduct'>
             <h2>{props.name}</h2>
-            <img src={props.img_src} className='imgPress'/>
+            <a href="../../../productExample.html"><img src={props.img_src} className='imgPress'/></a>
             <div className='priceAvCont'>
                 <img src={img_srcc} className='imgAva'/>
                 <p>{props.price} $</p>
             </div>
-            <div>
-                <a className='buyButton'  href=""></a>
-                <a className='addButton'  href=""></a>
+            <div className='buttonsShop'>
+                <a className='buyButton'  href="">Buy now</a>
+                <a className='buyButton'  href="">Add</a>
             </div>
         </div>
     )
 }
-
 
