@@ -70,7 +70,22 @@ const data = [
         tip_open: 1.6,
         productPage: "",
         description: "",
-    }
+    },
+    {
+        id: 7,
+        name: "LKHJGF",
+        price: 750,
+        img_src: "./assets/ustnik.jpg",
+        available: true,
+        instr_type: "SOPR",
+        style: "JAZZ",
+        tip_open: 2.0,
+        productPage: "",
+        description: "",
+    },
+
+
+
 ];
 
 export default data;
