@@ -5,18 +5,19 @@ import Checkbox from '@mui/material/Checkbox';
 export default function ControlledCheckbox(props) {
   const [checked, setChecked] = React.useState(true);
 
-  // const handleChange = (event) => {
-  //   setChecked(event.target.checked);
-  // };
+  const handleChange = (event) => {
+    setChecked(event.target.checked);
+  };
 
-  function handleChange(){
-    props.onChange();
-  }
+  // function handleChange(){
+  //   props.onChange();
+  // }
 
   return (
     <Checkbox
-      checked={props.isChecked}
+      checked={checked}
       onChange={handleChange}
+      
     //   inputProps={{ 'aria-label': 'controlled' }}
     color='black'
     sx={{ '& .MuiSvgIcon-root': { fontSize: 35 } }}

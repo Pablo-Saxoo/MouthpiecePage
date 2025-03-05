@@ -77,7 +77,7 @@ const data = [
         price: 750,
         img_src: "./assets/ustnik.jpg",
         available: true,
-        instr_type: "Soprano",
+        instr_type: "Baritone",
         style: "JAZZ",
         tip_open: 2.0,
         productPage: "",

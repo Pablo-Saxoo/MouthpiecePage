@@ -3,9 +3,7 @@ import Checkbox from '@mui/material/Checkbox';
 import data from '../../../data';
 
 export default function ControlledCheckbox() {
-    // Tablica z wszystkimi instr_type po której przechodzimy po kolei, 
-    // i jeśli dany x type z tablicy równy
-    // jest x checboxowanemu to dodajemy go do nowej tablicy
+   
 
     const saxArr = ['Soprano', 'Alto', 'Tenor', 'Baritone', 'Clarinete']
     let arr_mouth = []
