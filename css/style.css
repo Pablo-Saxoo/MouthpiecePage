@@ -2,6 +2,10 @@ header{
 
 }
 
+@media (min-width: 320px) and (max-width: 435px){
+    
+}
+
 body{
     background-color: #FBD596;
     margin: auto;
@@ -12,386 +16,438 @@ body{
     font-optical-sizing: auto;
 }
 
-a{
-    text-decoration: none;
-    color: black;
-}
+/* 1280px mają monitory zazwyczaj, powyżej już dać większy margin */
+@media (min-width:436px) {
 
-.homeHeaderContainer{
-    display: flex;
-    justify-content: space-evenly;
-    gap:100px;
-    font-size: 24px;
-    font-weight: bold;
-}
+    /*html{
+        max-width: 1280px;
+        width: 1280px; 
+        margin-inline: auto;
+    } */
 
-.homeHeaderInsideContainerLeft{
-    display: flex;
-    flex: column;
-    align-items: center;
-    width: 260px;
-    justify-content: space-between;
-    gap: 10px;
-    margin-top: 15px;
-}
-
-.homeHeaderInsideContainerCenter{
-    display: flex;
-    flex: column;
-    width: 655px;
-    align-items: center;
-    justify-content: space-between;
-    gap:20px;
-}
-
-.homeHeaderInsideContainerRight{
-    display: flex;
-    flex: column;
-    width: 250px;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-}
-
-.buttSign{
-    border: solid black;
-    margin: auto;
-    padding: 0.5px;
-    border-radius: 10px;
-    background-color: #BA7979;
-}
-
-.homeHeaderItem{
-    justify-self: center;
-    align-self: center;
-}
-
-.logo{
-    height: 75px;
-    width: 75px;
-}
-
-.homeHeaderContainer > h1{
-    font-family: "Lemonada";
-    font-optical-sizing: auto;
-    font-weight: bold;
-    font-size: 24px;
-    font-style: normal;
-}
-
-.AboutUs{
-    min-width: 130px;
-}
-
-.SignIn{
-    min-width: 110px;
-}
-
-.backgroundSaxImg{
-    /* position: relative; */
-    /* top: 150;
-    left: 0; */
-    height: calc(100vh - 100px);
-    background-image: url("../assets/sax-neck-back.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* min-height:1250px; */
-    resize:vertical;
+    a{
+        text-decoration: none;
+        color: black;
+    }
     
-}
-
-.firstPageContainer{
-    width: 100%;
-    height: calc(100vh - 100px);
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /* min-width: 1250px; */
-}
-
-
-.firstPageContainer > h1{
-    font-size: 80px;
-    margin-bottom: -80px;
-}
-
-.firstPageContainer > p{
-    font-size: 36px;
-    font-weight:lighter;
-    padding-top: 90px;
-}
-
-.startButton{
-    border: 0;
-    background-color: #BA7979;
-    font-size: 36px;
-    width: 480px;
-    border-radius: 68px;
-    box-shadow: 7px 7px 10px black;
-    text-align: center;
-}
-
-.karuzelaSection{
-    position: relative;
-    top: 200px;
-    height: auto;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.karuzelaSection > p{
-    font-size: 36px;
-}
-
-.karuzelaSection  h1{
-    font-size: 50px;
-}
-
-.flexGenre{
-    display: flex;
-    justify-content: center;
-    margin-top: 100px;
-    gap: 800px;
-}
-
-.karuzelaImg{
-    width: 1000px;
-}
-
-.karuzela{
-    display: flex;
-    width: 100%;
-    margin-top: 100px;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.karuzelButt{
-    height: 130px;
-    width: 60px;
-    background-color: #BA7979;
-    border: none;
-    border-radius: 10px;
+    .homeHeaderContainer{
+        display: flex;
+        justify-content: space-evenly;
+        gap:100px;
+        font-size: 24px;
+        font-weight: bold;
+        max-width: 1280px;
+        margin-inline: auto;
+    }
     
-}
-
-.karuzelaLeftButt{
-    background-image: url("../assets/leftArrow.png");
-    background-size: 55px;
-    background-repeat: no-repeat;
-}
-
-.karuzelaRightButt{
-    background-image: url("../assets/rightArrow.png");
-    background-size: 50px;
-    background-repeat: no-repeat;
-    background-position: 5px;
-}
-
-.fittingSection{
-    position: relative;
-    top: 400px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 50px;
-    background-color: #FFE3B6;
-    /* height: 1000px; */
-    padding-top: 150px;
-    padding-bottom: 150px;
-}
-
-.fittingSection p{
-    font-size: 36px;
+    .homeHeaderInsideContainerLeft{
+        display: flex;
+        flex: column;
+        align-items: center;
+        width: 260px;
+        justify-content: space-between;
+        gap: 10px;
+        margin-top: 15px;
+    }
     
-}
-
-.fittingButton{
-    border: 0;
-    background-color: #BA7979;
-    font-size: 36px;
-    width: 480px;
-    height: 80px;
-    border-radius: 68px;
-    box-shadow: 7px 7px 10px black;
-    text-align: center;
+    .homeHeaderInsideContainerCenter{
+        display: flex;
+        flex: column;
+        width: 655px;
+        align-items: center;
+        justify-content: space-between;
+        gap:20px;
+    }
     
-}
-
-
-.mainReviewsContainer{
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    top: 700px;
-    align-items: center;
-    gap: 50px;
-}
-
-.flexAd{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.trust{
-    font-size: 36px;
-    font-weight: bold;
-}
-
-.customers{
-    font-size: 30px;
-    /* margin-top: -70px; */
-}
-
-.flexComm{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 100px;
-}
-
-.flexReviewsContainer{
-    display: flex;
-    gap: 100px;
-}
-
-
-.quote{
-    background-color: #BA7979;
-    width: 485px;
-    height: 200px;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding-left: 10px;
-}
-
-.QCenter{
-    text-align: center;
-}
-
-.quote p, h1{
-    color: black;
-}
-
-.quoteBigP{
-    font-size: 27px;
-    margin-top: -5px;
-}
-
-.quoteBigPP{
-    font-size: 27px;
-    margin-top: -4px;
-}
-
-.quoteH{
-    margin-top: -10px;
-    font-size: 18px;
-}
-
-.quoteHH{
-    font-size: 18px;
-}
-
-.quoteSmallP{
-    margin-top: -10px;
-    font-size: 18px;
-}
-
-.quoteSmallPP{
-    font-size: 18px;
-}
-
-.titleClasse{
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    margin-top: -25px;
-    gap: 10px;
-}
-
-.titleName{
-    /* font-size: 1.05em; */
-}
-
-.descriptionClasse{
-    display: flex;
-    /* align-items: center; */
-    justify-content: flex-start;
-    margin-top: -20px;
-    gap: 10px;
-}
-
-form{
-    width: 500px;
-    height: 164px;
-    border-radius: 10px;
-    /* margin: 30px auto 20px auto; */
-    position: relative;
-    background-color: #BA7979;
-    padding: 10px;
+    .homeHeaderInsideContainerRight{
+        display: flex;
+        flex: column;
+        width: 250px;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+    }
     
+    .buttSign{
+        border: solid black;
+        margin: auto;
+        padding: 0.5px;
+        border-radius: 10px;
+        background-color: #BA7979;
+    }
+    
+    .homeHeaderItem{
+        justify-self: center;
+        align-self: center;
+    }
+    
+    .logo{
+        height: 75px;
+        width: 75px;
+    }
+    
+    .homeHeaderContainer > h1{
+        font-family: "Lemonada";
+        font-optical-sizing: auto;
+        font-weight: bold;
+        font-size: 24px;
+        font-style: normal;
+    }
+    
+    .AboutUs{
+        min-width: 130px;
+    }
+    
+    .SignIn{
+        min-width: 110px;
+    }
+    
+    .backgroundSaxImg{
+        /* position: relative; */
+        /* top: 150;
+        left: 0; */
+        height: calc(100vh - 100px);
+        background-image: url("../assets/sax-neck-back.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* min-height:1250px; */
+        resize:vertical;
+        
+        
+    }
+    
+    .firstPageContainer{
+        width: 100%;
+        height: calc(100vh - 100px);
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        max-width: 1280px;
+        margin-inline: auto;
+    }
+    
+    
+    .firstPageContainer > h1{
+        font-size: 80px;
+        margin-bottom: -80px;
+    }
+    
+    .firstPageContainer > p{
+        font-size: 36px;
+        font-weight:lighter;
+        padding-top: 90px;
+    }
+    
+    .startButton{
+        border: 0;
+        background-color: #BA7979;
+        font-size: 36px;
+        width: 480px;
+        border-radius: 68px;
+        box-shadow: 7px 7px 10px black;
+        text-align: center;
+    }
+    
+    .karuzelaSection{
+        position: relative;
+        top: 200px;
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        max-width: 1280px;
+        margin-inline: auto;
+    }
+    
+    .karuzelaSection > p{
+        font-size: 36px;
+    }
+    
+    .karuzelaSection  h1{
+        font-size: 36px;
+        min-width: 200px;
+    }
+    
+    .flexGenre{
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
+        gap: 300px;
+
+        max-width: 1280px;
+        margin-inline: auto;
+    }
+    
+    .karuzelaImg{
+        width: 1000px;
+    }
+    
+    .karuzela{
+        display: flex;
+        width: 100%;
+        margin-top: 100px;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    .karuzelButt{
+        height: 130px;
+        width: 60px;
+        background-color: #BA7979;
+        border: none;
+        border-radius: 10px;
+        
+    }
+    
+    .karuzelaLeftButt{
+        background-image: url("../assets/leftArrow.png");
+        background-size: 55px;
+        background-repeat: no-repeat;
+    }
+    
+    .karuzelaRightButt{
+        background-image: url("../assets/rightArrow.png");
+        background-size: 50px;
+        background-repeat: no-repeat;
+        background-position: 5px;
+    }
+
+    .back1{
+        background-color: #FFE3B6;
+        top: 400px;
+        position: relative;
+    }
+    
+    .fittingSection{
+        position: relative;
+        /* top: 400px; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+        /* background-color: #FFE3B6; */
+        /* height: 1000px; */
+        padding-top: 150px;
+        padding-bottom: 150px;
+
+        max-width: 1280px;
+        margin-inline: auto;
+    }
+    
+    .fittingSection p{
+        font-size: 36px;
+        margin-bottom: -50px;
+    }
+    
+    .fittingButton{
+        border: 0;
+        background-color: #BA7979;
+        font-size: 36px;
+        width: 480px;
+        height: 80px;
+        border-radius: 68px;
+        box-shadow: 7px 7px 10px black;
+        text-align: center;
+        margin-top: 50px;
+    }
+    
+    
+    .mainReviewsContainer{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 700px;
+        align-items: center;
+        gap: 50px;
+        
+        max-width: 1280px;
+        margin-inline: auto;
+    }
+    
+    .flexAd{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .trust{
+        font-size: 36px;
+        font-weight: bold;
+    }
+    
+    .customers{
+        font-size: 30px;
+        /* margin-top: -70px; */
+    }
+    
+    .flexComm{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 100px;
+    }
+    
+    .flexReviewsContainer{
+        display: flex;
+        gap: 80px;
+    }
+    
+    
+    .quote{
+        background-color: #BA7979;
+        width: 370px;
+        height: 250px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-left: 10px;
+    }
+    
+    .QCenter{
+        text-align: center;
+    }
+    
+    .quote p, h1{
+        color: black;
+    }
+    
+    .quoteBigP{
+        font-size: 27px;
+        margin-top: -5px;
+    }
+    
+    .quoteBigPP{
+        font-size: 27px;
+        margin-top: -4px;
+    }
+    
+    .quoteH{
+        margin-top: -10px;
+        font-size: 18px;
+    }
+    
+    .quoteHH{
+        font-size: 18px;
+    }
+    
+    .quoteSmallP{
+        margin-top: -10px;
+        font-size: 18px;
+    }
+    
+    .quoteSmallPP{
+        font-size: 18px;
+    }
+    
+    .titleClasse{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-top: -25px;
+        gap: 10px;
+    }
+    
+    .titleName{
+        /* font-size: 1.05em; */
+    }
+    
+    .descriptionClasse{
+        display: flex;
+        /* align-items: center; */
+        justify-content: flex-start;
+        margin-top: -20px;
+        gap: 10px;
+    }
+    
+    form{
+        width: 500px;
+        height: 164px;
+        border-radius: 10px;
+        /* margin: 30px auto 20px auto; */
+        position: relative;
+        background-color: #BA7979;
+        padding: 10px;
+        
+    }
+    
+    form input, textarea{
+        border: none;
+        background-color: #BA7979;
+        outline: none;
+        resize: none;
+        width: 100%;
+        font-size: 1.5em;
+    }
+    
+    form button{
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+        cursor: pointer;
+        outline: none;
+        width: 36px;
+        height: 36px;
+        border: none;
+        border-radius: 50px;
+        background-color: #FBD596;
+    }
+    
+    
+    
+    .futa{
+        position: relative;
+        /* top: 900px; */
+        /* margin-left: 400px; */
+        display: flex;
+        justify-content: space-around;
+
+        max-width: 1280px;
+        margin-inline: auto;
+    }
+
+
+    footer{
+        background-color: #FFE3B6;
+        /* background-size: 1000px; */
+        top: 900px;
+        position: relative;
+    }
+
+    /* .back2{
+        position: relative;
+        top: 900px;
+        
+    } */
+    
+    .footerFlex{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* justify-content: space-evenly; */
+    }
+    
+    .footLoogo{
+        width: 66px;
+    }
+    
+    .footSocials{
+        width: 40px;
+    }
+    
+    .footerFlexImg{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
 }
 
-form input, textarea{
-    border: none;
-    background-color: #BA7979;
-    outline: none;
-    resize: none;
-    width: 100%;
-    font-size: 1.5em;
-}
-
-form button{
-    position: absolute;
-    right: 10px;
-    bottom: 10px;
-    cursor: pointer;
-    outline: none;
-    width: 36px;
-    height: 36px;
-    border: none;
-    border-radius: 50px;
-    background-color: #FBD596;
-}
-
-
-
-.futa{
-    position: relative;
-    top: 900px;
-    /* margin-left: 400px; */
-    display: flex;
-    justify-content: space-around;
-    background-color: #FFE3B6;
-}
-
-.footerFlex{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* justify-content: space-evenly; */
-}
-
-.footLoogo{
-    width: 66px;
-}
-
-.footSocials{
-    width: 40px;
-}
-
-.footerFlexImg{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-}
