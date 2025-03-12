@@ -53,7 +53,7 @@ const FilterDataComponent = () => {
       document.getElementsByClassName("productsContainer")[0])}
       
 
-      <button onClick={handleButtonClick}>Update Data</button>
+      <button className='updateButt' onClick={handleButtonClick}>Update Data</button>
 
       </>
   );

@@ -13,7 +13,7 @@ const camera = new THREE.PerspectiveCamera( 80, window.innerWidth / window.inner
 let cameraTarget = new THREE.Vector3( 0, 0, 0);
 
 const renderer = new THREE.WebGLRenderer();
-renderer.setSize( window.innerWidth, 700);
+renderer.setSize( 1280, 700);
 
 document.getElementsByClassName("sym")[0].appendChild( renderer.domElement );
 
@@ -60,7 +60,7 @@ stlLoader.load( './assets/models/Mouthpiece-alt.STL', function (geometry) {
 	const material = new THREE.MeshPhongMaterial( { color: 0xBA7979, specular: 0xBA7979, shininess: 10 } );
 
 	const mesh = new THREE.Mesh( geometry, material );
-	mesh.position.set( 0, -30, 0 );
+	mesh.position.set( 0, -40, 0 );
 	mesh.rotation.set( - Math.PI / 2, 0, 0);
 	mesh.scale.set( 1, 1, 1 );
 	mesh.castShadow = true;

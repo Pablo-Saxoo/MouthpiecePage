@@ -34,6 +34,7 @@ const CheckboxComponent = ({ options, selectedValues, onChange }) => {
           key={option.value}
           control={
             <Checkbox
+            color='black'
               value={option.value}
               checked={checkedValues.includes(option.value)} // Ensure proper checked state
               onChange={handleCheckboxChange}
