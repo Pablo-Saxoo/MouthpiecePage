@@ -1,0 +1,158 @@
+header{
+
+}
+
+@media (min-width: 320px) and (max-width: 435px){
+    
+}
+
+body{
+    background-color: #FBD596;
+    margin: auto;
+}
+
+.fontStandard{
+    font-family: "Lemonada";
+    font-optical-sizing: auto;
+}
+
+/* 1280px mają monitory zazwyczaj, powyżej już dać większy margin */
+@media (min-width:436px) {
+
+    /*html{
+        max-width: 1280px;
+        width: 1280px; 
+        margin-inline: auto;
+    } */
+
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    
+    .homeHeaderContainer{
+        display: flex;
+        justify-content: space-evenly;
+        gap:100px;
+        font-size: 24px;
+        font-weight: bold;
+        max-width: 1280px;
+        margin-inline: auto;
+    }
+    
+    .homeHeaderInsideContainerLeft{
+        display: flex;
+        flex: column;
+        align-items: center;
+        width: 260px;
+        justify-content: space-between;
+        gap: 10px;
+        margin-top: 15px;
+    }
+    
+    .homeHeaderInsideContainerCenter{
+        display: flex;
+        flex: column;
+        width: 655px;
+        align-items: center;
+        justify-content: space-between;
+        gap:20px;
+    }
+    
+    .homeHeaderInsideContainerRight{
+        display: flex;
+        flex: column;
+        width: 250px;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+    }
+    
+    .buttSign{
+        border: solid black;
+        margin: auto;
+        padding: 0.5px;
+        border-radius: 10px;
+        background-color: #BA7979;
+    }
+    
+    .homeHeaderItem{
+        justify-self: center;
+        align-self: center;
+    }
+    
+    .logo{
+        height: 75px;
+        width: 75px;
+    }
+    
+    .homeHeaderContainer > h1{
+        font-family: "Lemonada";
+        font-optical-sizing: auto;
+        font-weight: bold;
+        font-size: 24px;
+        font-style: normal;
+    }
+    
+    .AboutUs{
+        min-width: 130px;
+    }
+    
+    .SignIn{
+        min-width: 110px;
+    }
+        
+    .titleDes{
+        max-width: 500px;
+        margin-inline: auto;
+    }
+    
+    .futa{
+        position: relative;
+        /* top: 900px; */
+        /* margin-left: 400px; */
+        display: flex;
+        justify-content: space-around;
+
+        max-width: 1280px;
+        margin-inline: auto;
+    }
+
+
+    footer{
+        background-color: #FFE3B6;
+        /* background-size: 1000px; */
+        top: 900px;
+        position: relative;
+    }
+
+    /* .back2{
+        position: relative;
+        top: 900px;
+        
+    } */
+    
+    .footerFlex{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* justify-content: space-evenly; */
+    }
+    
+    .footLoogo{
+        width: 66px;
+    }
+    
+    .footSocials{
+        width: 40px;
+    }
+    
+    .footerFlexImg{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+}
+
