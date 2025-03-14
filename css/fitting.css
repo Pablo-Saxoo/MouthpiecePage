@@ -19,11 +19,10 @@ body{
 /* 1280px mają monitory zazwyczaj, powyżej już dać większy margin */
 @media (min-width:436px) {
 
-    /*html{
-        max-width: 1280px;
-        width: 1280px; 
-        margin-inline: auto;
-    } */
+    html{
+        font-family: "Lemonada";
+        font-optical-sizing: auto;
+    }
 
     a{
         text-decoration: none;
@@ -103,8 +102,38 @@ body{
     }
         
     .titleDes{
-        max-width: 500px;
+        /* max-width: 1280px; */
+        /* margin-inline: auto; */
+
+        margin-top: 50px;
+        font-size: 25px;
+        display: flex;
+        justify-content: center;
+
+    }
+
+
+    .imgContainer{
+        display: flex;
+        align-items: center;
+        margin-top: 50px;
+        gap: 100px;
+        max-width: 1280px;
         margin-inline: auto;
+    }
+
+    .imgContainer img{
+        height: 600px;
+        border-radius: 10px;
+    }
+
+    .imgContainer p{
+        font-size: 30px;
+        text-indent: 50px;
+        line-height: 65px;
+        text-align: justify;
+        text-justify: inter-word;
+
     }
     
     .futa{
@@ -119,10 +148,13 @@ body{
     }
 
 
+
+
+
     footer{
         background-color: #FFE3B6;
         /* background-size: 1000px; */
-        top: 900px;
+        top: 100px;
         position: relative;
     }
 
