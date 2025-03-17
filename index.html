@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -6,182 +6,178 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MouthpieceShop</title>
 
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@300..700&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lemonada:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
-
-<body>
+  <body>
     <div class="homeHeaderContainer fontStandard">
-
-        <a href="./index.html">
-            <div class="homeHeaderInsideContainerLeft">
-                <div ><img class="logo" src="./assets/logo.png" alt=""></div>
-                <div ><img src="./assets/SAXOai.png" alt=""></div>
-            </div>
-        </a>
-        
-
-        <div class="homeHeaderInsideContainerCenter ">
-            <a href="./mouthpieces.html"><div ><p>Mouthpieces</p></div></a>
-            <div ><p>Necks</p></div>
-            <div ><p>Fitting</p></div>
-            <div class="AboutUs"><p>About Us</p></div>
+      <a href="./index.html">
+        <div class="homeHeaderInsideContainerLeft">
+          <div><img class="logo" src="./assets/logo.png" alt="" /></div>
+          <div><img src="./assets/SAXOai.png" alt="" /></div>
         </div>
+      </a>
 
-        <div class="homeHeaderInsideContainerRight">
-            <div class="SignIn"><p class="buttSign">Sign In</p></div>
-            <div><p class="buttSign">Register</p></div>
-        </div>
+      <div class="homeHeaderInsideContainerCenter">
+        <a href="./mouthpieces.html"
+          ><div><p>Mouthpieces</p></div></a
+        >
+        <div><p>Necks</p></div>
+        <div><p>Fitting</p></div>
+        <div class="AboutUs"><p>About Us</p></div>
+      </div>
+
+      <div class="homeHeaderInsideContainerRight">
+        <div class="SignIn"><p class="buttSign">Sign In</p></div>
+        <div><p class="buttSign">Register</p></div>
+      </div>
+
+      <div id="menuID"></div>
     </div>
 
+    <script type="module" src="./src/assets/menuSelect/AppSelect.jsx"></script>
 
     <div class="backgroundSaxImg fontStandard">
-        <div class="firstPageContainer">
-            <h1 >New era of</h1>
-            <h1 >MOUTHPIECES</h1>
-            <p>Customize your own saxophone mouthpiece...</p>
-            <!-- <button name="button" class="startButton fontStandard" ><a href="http://">START</a></button> -->
-            <a class="startButton fontStandard" href="./custom.html">START</a>
-        </div>
+      <div class="firstPageContainer">
+        <h1>New era of</h1>
+        <h1>MOUTHPIECES</h1>
+        <p>Customize your own saxophone mouthpiece...</p>
+        <!-- <button name="button" class="startButton fontStandard" ><a href="http://">START</a></button> -->
+        <a class="startButton fontStandard" href="./custom.html">START</a>
+      </div>
     </div>
 
-    
-
     <div class="karuzelaSection fontStandard">
-        <p>... or choose the best one for YOUR favorite style NOW</p>
-        
-        <div class="flexGenre">
-            <h1>Classic ... </h1>
-            <h1>... Jazz ...</h1>
-            <h1>... Rock</h1>
-        </div>
+      <p>... or choose the best one for YOUR favorite style NOW</p>
 
-        <div class="karuzela">
-            <button class="karuzelButt karuzelaLeftButt"></button>
-            <img class="karuzelaImg" src="./assets/karuzela.png" alt="">
-            <button class="karuzelButt karuzelaRightButt"></button>
-        </div>
+      <div class="flexGenre">
+        <h1>Classic ...</h1>
+        <h1>... Jazz ...</h1>
+        <h1>... Rock</h1>
+      </div>
+
+      <div class="karuzela">
+        <button class="karuzelButt karuzelaLeftButt"></button>
+        <img class="karuzelaImg" src="./assets/karuzela.png" alt="" />
+        <button class="karuzelButt karuzelaRightButt"></button>
+      </div>
     </div>
 
     <div class="back1">
-        <div class="fittingSection fontStandard"> 
-            <p> If you're unsure, book a mouthpiece fitting with one of our </p>
-            <p>experts who will help you find the perfect fit!</p>
-            <a class="fittingButton fontStandard" href="./test.html">Book Fitting</a>
-        </div>
+      <div class="fittingSection fontStandard">
+        <p>If you're unsure, book a mouthpiece fitting with one of our</p>
+        <p>experts who will help you find the perfect fit!</p>
+        <a class="fittingButton fontStandard" href="./test.html"
+          >Book Fitting</a
+        >
+      </div>
     </div>
-    
-
-
 
     <div class="mainReviewsContainer fontStandard">
-
-        <div class="flexComm">
-
-            <div class="flexAd">
-                <p class="trust">Thousands of customers already trusted us </p>
-                <p class="customers">Fast shipping, professional service, high quality.</p>
-            </div>
-
-            <div id="root"></div>
+      <div class="flexComm">
+        <div class="flexAd">
+          <p class="trust">Thousands of customers already trusted us</p>
+          <p class="customers">
+            Fast shipping, professional service, high quality.
+          </p>
         </div>
 
-        <div class="flexReviewsContainer">
+        <div id="root"></div>
+      </div>
 
-            <div class="quote ">
-                <p class="quoteBigPP QCenter">"Quote"</p>
+      <div class="flexReviewsContainer">
+        <div class="quote">
+          <p class="quoteBigPP QCenter">"Quote"</p>
 
-                <div class="titleClasse">
-                    <h1 class="quoteHH">Title:</h1>
-                    <p class="titleName">The best Mouthpieces I've ever tried!</p>
-                </div>
+          <div class="titleClasse">
+            <h1 class="quoteHH">Title:</h1>
+            <p class="titleName">The best Mouthpieces I've ever tried!</p>
+          </div>
 
-                <div class="descriptionClasse">
-                    <h1 class="quoteSmallPP">Description:</h1>
-                    <p class="desctiptionName">I have no words! These mouthpieces are outside this planet!</p>
-                </div>
-            </div>
-
-            <div class="quote ">
-                <p class="quoteBigPP QCenter">"Quote"</p>
-
-                <div class="titleClasse">
-                    <h1 class="quoteHH">Title:</h1>
-                    <p class="titleName">I've never tried better mouthpieces!</p>
-                </div>
-
-                <div class="descriptionClasse">
-                    <h1 class="quoteSmallPP">Description:</h1>
-                    <p class="desctiptionName">Beautiful sound and gorgeus look! Soo awesome!</p>
-                </div>
-            </div>
-
-            <div class="quote ">
-                <p class="quoteBigPP QCenter">"Quote"</p>
-
-                <div class="titleClasse">
-                    <h1 class="quoteHH">Title:</h1>
-                    <p class="titleName">Tutaj title</p>
-                </div>
-
-                <div class="descriptionClasse">
-                    <h1 class="quoteSmallPP">Description:</h1>
-                    <p class="desctiptionName">Tutaj opis</p>
-                </div>
-            </div>
-
+          <div class="descriptionClasse">
+            <h1 class="quoteSmallPP">Description:</h1>
+            <p class="desctiptionName">
+              I have no words! These mouthpieces are outside this planet!
+            </p>
+          </div>
         </div>
 
-        <div class="flexReviewsContainer" >
+        <div class="quote">
+          <p class="quoteBigPP QCenter">"Quote"</p>
 
+          <div class="titleClasse">
+            <h1 class="quoteHH">Title:</h1>
+            <p class="titleName">I've never tried better mouthpieces!</p>
+          </div>
+
+          <div class="descriptionClasse">
+            <h1 class="quoteSmallPP">Description:</h1>
+            <p class="desctiptionName">
+              Beautiful sound and gorgeus look! Soo awesome!
+            </p>
+          </div>
         </div>
 
+        <div class="quote">
+          <p class="quoteBigPP QCenter">"Quote"</p>
+
+          <div class="titleClasse">
+            <h1 class="quoteHH">Title:</h1>
+            <p class="titleName">Tutaj title</p>
+          </div>
+
+          <div class="descriptionClasse">
+            <h1 class="quoteSmallPP">Description:</h1>
+            <p class="desctiptionName">Tutaj opis</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flexReviewsContainer"></div>
     </div>
 
     <script type="module" src="/src/main.jsx"></script>
     <!-- <script type="module" src="/src/renderReviews.jsx"></script> -->
 
-
     <footer class="fontStandard">
-
-        <div class="futa">
-            <div class="footerFlexImg">
-                <img class="footLoogo" src="./assets/logo2.png" alt="">
-                <img class="footSocials" src="./assets/footer/x.png" alt="">
-                <img class="footSocials" src="./assets/footer/ig.png" alt="">
-                <img class="footSocials" src="./assets/footer/yt.png" alt="">
-                <img class="footSocials" src="./assets/footer/linked.png" alt="">
-            </div>
-            
-            <div class="footerFlex">
-                <h2>Use Cases</h2>
-                <p>Artists</p>
-                <p>Blog</p>
-                <p>Workshop</p>
-                <p>Future</p>
-            </div>
-
-            <div class="footerFlex">
-                <h2>Design</h2>
-                <p>Prototyping</p>
-                <p>Technology</p>
-                <p>Collaboration</p>
-                <p>Features</p>
-            </div>
-
-
-            <div class="footerFlex">
-                <h2>Resources</h2>
-                <p>Maintance</p>
-                <p>Support</p>
-                <p>Contact</p>
-            </div>
+      <div class="futa">
+        <div class="footerFlexImg">
+          <img class="footLoogo" src="./assets/logo2.png" alt="" />
+          <img class="footSocials" src="./assets/footer/x.png" alt="" />
+          <img class="footSocials" src="./assets/footer/ig.png" alt="" />
+          <img class="footSocials" src="./assets/footer/yt.png" alt="" />
+          <img class="footSocials" src="./assets/footer/linked.png" alt="" />
         </div>
-    </footer>
 
-</body>
+        <div class="footerFlex">
+          <h2>Use Cases</h2>
+          <p>Artists</p>
+          <p>Blog</p>
+          <p>Workshop</p>
+          <p>Future</p>
+        </div>
+
+        <div class="footerFlex">
+          <h2>Design</h2>
+          <p>Prototyping</p>
+          <p>Technology</p>
+          <p>Collaboration</p>
+          <p>Features</p>
+        </div>
+
+        <div class="footerFlex">
+          <h2>Resources</h2>
+          <p>Maintance</p>
+          <p>Support</p>
+          <p>Contact</p>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
