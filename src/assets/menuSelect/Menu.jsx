@@ -7,7 +7,7 @@ import Select from "@mui/material/Select";
 import MenuOpenIcon from "@mui/icons-material/MenuOpen";
 
 export default function BasicSelect() {
-  const [age, setAge] = React.useState("");
+  const [age, setAge] = React.useState("Menu");
 
   const handleChange = (event) => {
     setAge(event.target.value);
@@ -25,13 +25,15 @@ export default function BasicSelect() {
           onChange={handleChange}
           IconComponent={MenuOpenIcon}
         >
-          <MenuItem value={10}>Mouthpieces</MenuItem>
-          <MenuItem value={20}>Necks</MenuItem>
-          <MenuItem value={30}>Fitting</MenuItem>
-          <MenuItem value={30}>About Us</MenuItem>
+          <MenuItem value={"Mouthpieces"}>
+            <a href="./mouthpieces.html">Mouthpieces</a>
+          </MenuItem>
+          <MenuItem value={"Necks"}>Necks</MenuItem>
+          <MenuItem value={"Fitting"}>Fitting</MenuItem>
+          <MenuItem value={"About Us"}>About Us</MenuItem>
 
-          <MenuItem value={30}>Sign In</MenuItem>
-          <MenuItem value={30}>Register</MenuItem>
+          <MenuItem value={"Sign In"}>Sign In</MenuItem>
+          <MenuItem value={"Register"}>Register</MenuItem>
         </Select>
       </FormControl>
     </Box>

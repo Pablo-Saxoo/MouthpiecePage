@@ -14,23 +14,27 @@ a {
 }
 
 /*  Docelowo max-width 435 */
-@media (min-width: 320px) and (max-width: 635px) {
+@media (min-width: 320px) and (max-width: 636px) {
   html {
-    max-width: 635px;
+    max-width: 636px;
   }
+
+  /* /////////////////////////////////////////////// */
+  /*              Header Section                     */
 
   .homeHeaderContainer {
     display: flex;
     justify-content: space-evenly;
     font-size: 24px;
     font-weight: bold;
-    max-width: 635px;
+    max-width: 636px;
     margin-inline: auto;
+    height: 80px;
   }
 
   .homeHeaderInsideContainerCenter,
   .homeHeaderInsideContainerRight {
-    visibility: hidden;
+    display: none;
   }
 
   .homeHeaderInsideContainerLeft {
@@ -54,22 +58,364 @@ a {
   }
 
   .menu {
+    margin-top: 10px;
   }
 
-  .homeHeaderContainer > h1 {
-    font-family: "Lemonada";
-    font-optical-sizing: auto;
-    font-weight: bold;
+  /* /////////////////////////////////////////////////////////////////////////// */
+  /*                      First SECTION                    */
+  .backgroundSaxImg {
+    /* position: relative; */
+    /* top: 150;
+        left: 0; */
+    height: calc(100vh - 100px);
+    background-image: url("../assets/sax-neck-back.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* min-height:1250px; */
+    resize: vertical;
+  }
+
+  .firstPageContainer {
+    width: 100%;
+    height: calc(100vh - 100px);
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    max-width: 636px;
+    margin-inline: auto;
+  }
+
+  .firstPageContainer > h1 {
+    font-size: 40px;
+    margin-bottom: -10px;
+  }
+
+  .firstPageContainer p {
     font-size: 24px;
-    font-style: normal;
+    font-weight: lighter;
+    padding-top: 40px;
   }
 
-  .AboutUs {
-    min-width: 130px;
+  .newPPageContainer {
+    margin-top: -50px;
   }
 
-  .SignIn {
-    min-width: 110px;
+  .startButton {
+    border: 0;
+    background-color: #ba7979;
+    font-size: 36px;
+    width: 380px;
+    border-radius: 68px;
+    box-shadow: 7px 7px 10px black;
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  /* ///////////////////////// */
+  /* Second section - karuzela */
+
+  .karuzelaSection {
+    position: relative;
+    top: 200px;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /* max-width: 636px;
+    margin-inline: auto; */
+  }
+
+  .karuzelaSection > p {
+    font-size: 26px;
+    max-width: 550px;
+
+    vertical-align: middle;
+    text-align: center;
+  }
+
+  .karuzelaSection h1 {
+    font-size: 26px;
+    min-width: 150px;
+  }
+
+  .flexGenre {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 40px;
+
+    max-width: 636px;
+    margin-inline: auto;
+  }
+
+  .karuzelaImg {
+    width: 400px;
+  }
+
+  .karuzela {
+    display: flex;
+    width: 100%;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .karuzelButt {
+    height: 60px;
+    width: 30px;
+    background-color: #ba7979;
+    border: none;
+    border-radius: 10px;
+  }
+
+  .karuzelaLeftButt {
+    background-image: url("../assets/leftArrow.png");
+    background-size: 25px;
+    background-repeat: no-repeat;
+  }
+
+  .karuzelaRightButt {
+    background-image: url("../assets/rightArrow.png");
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: 5px;
+  }
+
+  .back1 {
+    background-color: #ffe3b6;
+    top: 400px;
+    position: relative;
+  }
+
+  /* ////////////////////////////////////////////////////////  */
+  /*                        Booking section                    */
+
+  .fittingSection {
+    position: relative;
+    /* top: 400px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    /* background-color: #FFE3B6; */
+    /* height: 1000px; */
+    padding-top: 150px;
+    padding-bottom: 150px;
+
+    max-width: 636px;
+    margin-inline: auto;
+  }
+
+  .fittingSection p {
+    font-size: 26px;
+    margin-bottom: -50px;
+    text-align: center;
+  }
+
+  .fittingButton {
+    border: 0;
+    background-color: #ba7979;
+    font-size: 36px;
+    width: 380px;
+    height: 60px;
+    border-radius: 68px;
+    box-shadow: 7px 7px 10px black;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 30px;
+  }
+
+  /* /////////////////////////////////////////// */
+  /*            Review Section */
+
+  .mainReviewsContainer {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 700px;
+    align-items: center;
+    gap: 50px;
+
+    max-width: 636px;
+    margin-inline: auto;
+  }
+
+  .flexAd {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .trust {
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .customers {
+    font-size: 20px;
+    /* margin-top: -70px; */
+    text-align: center;
+  }
+
+  #root {
+    display: none;
+  }
+
+  .flexComm {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .flexReviewsContainer {
+    display: flex;
+    gap: 30px;
+    max-width: 636px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .quote {
+    background-color: #ba7979;
+    width: 300px;
+    height: 310px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 10px;
+  }
+
+  .QCenter {
+    text-align: center;
+  }
+
+  .quote p,
+  h1 {
+    color: black;
+  }
+
+  .quoteBigPP {
+    font-size: 27px;
+    margin-top: -4px;
+  }
+
+  .titleClasse {
+    display: flex;
+    /* align-items: center; */
+    justify-content: flex-start;
+    margin-top: -35px;
+    gap: 10px;
+  }
+
+  .quoteHH {
+    font-size: 18px;
+  }
+
+  .titleName,
+  .desctiptionName {
+    /* text-align: center; */
+
+    /* text-align: justify; */
+    /* text-justify: inter-word; */
+  }
+
+  .quoteSmallPP {
+    font-size: 18px;
+  }
+
+  .descriptionClasse {
+    display: flex;
+    /* align-items: center; */
+    justify-content: flex-start;
+    margin-top: -20px;
+    gap: 10px;
+  }
+
+  form {
+    width: 500px;
+    height: 164px;
+    border-radius: 10px;
+    /* margin: 30px auto 20px auto; */
+    position: relative;
+    background-color: #ba7979;
+    padding: 10px;
+  }
+
+  form input,
+  textarea {
+    border: none;
+    background-color: #ba7979;
+    outline: none;
+    resize: none;
+    width: 100%;
+    font-size: 1.5em;
+  }
+
+  form button {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    cursor: pointer;
+    outline: none;
+    width: 36px;
+    height: 36px;
+    border: none;
+    border-radius: 50px;
+    background-color: #fbd596;
+  }
+
+  /* //////////////////////////////////////////////////////////////// */
+  /*                          Footer section                          */
+
+  .futa {
+    position: relative;
+    /* top: 900px; */
+    /* margin-left: 400px; */
+    display: flex;
+    justify-content: space-around;
+
+    max-width: 1280px;
+    margin-inline: auto;
+  }
+
+  footer {
+    background-color: #ffe3b6;
+    /* background-size: 1000px; */
+    top: 900px;
+    position: relative;
+  }
+
+  .footerFlex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-evenly; */
+  }
+
+  .footLoogo {
+    width: 66px;
+  }
+
+  .footSocials {
+    width: 40px;
+  }
+
+  .footerFlexImg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
   }
 }
 
@@ -132,7 +478,7 @@ a {
     width: 75px;
   }
   .menu {
-    visibility: hidden;
+    display: none;
   }
 
   .homeHeaderContainer > h1 {
@@ -199,6 +545,9 @@ a {
     box-shadow: 7px 7px 10px black;
     text-align: center;
   }
+
+  /* ///////////////////////// */
+  /* Second section - karuzela */
 
   .karuzelaSection {
     position: relative;
@@ -271,6 +620,9 @@ a {
     top: 400px;
     position: relative;
   }
+
+  /* //////////////////////////////////////////////////////// */
+  /*                        Review section                    */
 
   .fittingSection {
     position: relative;
@@ -366,19 +718,9 @@ a {
     color: black;
   }
 
-  .quoteBigP {
-    font-size: 27px;
-    margin-top: -5px;
-  }
-
   .quoteBigPP {
     font-size: 27px;
     margin-top: -4px;
-  }
-
-  .quoteH {
-    margin-top: -10px;
-    font-size: 18px;
   }
 
   .quoteHH {
@@ -446,6 +788,9 @@ a {
     border-radius: 50px;
     background-color: #fbd596;
   }
+
+  /* //////////////////////////////////////////////////////////////// */
+  /*                          Footer section                          */
 
   .futa {
     position: relative;
