@@ -1,1 +1,1 @@
-This is the mouthpiece-shop webpage project.
+This is the mouthpiece-shop/blog webpage project.
