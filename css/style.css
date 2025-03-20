@@ -1,4 +1,7 @@
 /* Pododawać zmienne do pliku */
+:root {
+  --try-zmienna: black;
+}
 
 body {
   background-color: #fbd596;
